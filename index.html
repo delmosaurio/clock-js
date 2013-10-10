@@ -4,21 +4,47 @@
   <meta charset="UTF-8">
   <title>Reloj | Dirección de Tecnología</title>
   
-  <link rel="stylesheet" href="/css/esilo.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  
+  <script type="text/javascript">
+    // definimos la variable enDesarrollo
+    // de forma global
+    // NOTA: Cuidado con las variables Globales
 
+    window.enDesarrollo = true;
+    window.radioGlobal = 100; // 200/2
+
+  </script>
 </head>
 <body>
   
-  <div class="container">
-    
+  <div id="contendor" class="circle">
+    <canvas id="agujas" width="200" height="200"></canvas>
   </div>
+
+  <ul id="numeros">
+    <li id="uno" class="circulo">1</li>
+    <li id="dos" class="circulo">2</li>
+    <li id="tres" class="circulo">3</li>
+    <li id="cuatro" class="circulo">4</li>
+    <li id="cinco" class="circulo">5</li>
+    <li id="seis" class="circulo">6</li>
+    <li id="siete" class="circulo">7</li>
+    <li id="ocho" class="circulo">8</li>
+    <li id="nueve" class="circulo">9</li>
+    <li id="diez" class="circulo">10</li>
+    <li id="once" class="circulo">11</li>
+    <li id="doce" class="circulo">12</li>
+  </ul>
+
+
   
   <!-- vendor scripts -->
-  <script src="/js/vendor/jquery-1.10.2.js"></script>
-  <script src="/js/vendor/jcanvas.min.js"></script>
+  <script src="js/vendor/jquery-1.10.2.js"></script>
+  <script src="js/vendor/jcanvas.min.js"></script>
   <!-- -->
 
-  <script src="/js/reloj.js"></script>
+  <script src="js/reloj.js"></script>
 
 </body>
 </html>
