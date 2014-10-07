@@ -14,52 +14,49 @@ html {
 
 body {
   height: 100%;
-}
-
-#contendor {
-  height: 200px;
-  margin: -100px auto;
   position: relative;
-  top: 50%;
-  width: 200px;
-  /* para desarrollo
-  border: dotted 1px red;*/
 }
 
-#agujas {
-  position: absolute;
+/* temas */
+.camp-digital {
+  -moz-border-radius: 50%;
+  -moz-box-shadow: 0 3px 3px rgba(0,0,0,0.20), rgba(0,0,0,0.12) 0px 0px 10px inset;
+  -webkit-border-radius: 50%;
+  -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.20), rgba(0,0,0,0.12) 0px 0px 10px inset;
+  background-color: #FDFDFD;
+  background-image: url('../img/camp-digital-simple.png');
+  background-repeat: no-repeat;
+  background-position: center bottom 30px;
+  border-radius: 50%;
+  border: 1px solid #FDFDFD;
 }
 
-
-#numeros {
-  height: 200px;
-  list-style: none outside none;
-  margin: -200px auto;
-  position: relative;
-  top: 50%;
-  width: 200px;
-  /* para desarrollo
-  border: dotted 1px black;*/
-}
-
-  #numeros li {
-    background-color: #ff9500;
-    border: solid 0px black;
-    color: white;
-    cursor: pointer;
-    float: top;
-    height: 30px;
-    line-height: 30px;
-    margin: -15px 0 0 -15px;
-    padding: 0;
-    position: absolute;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: 30px;
+  .camp-digital ul.numeros {
+    border-radius: 50%;
+    height: 100%;
+    list-style: none  outside none;
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 15px;
   }
 
-/* CLASSES */
-.circulo {
-  border-radius: 50%;
-}
+    .camp-digital ul.numeros li[data-hora] {
+      border-radius: 50%;
+      background: grey;
+      height: 6px;
+      margin-left: -3px;
+      margin-top: -3px;
+      position: absolute;
+      width: 6px;
+    }
+
+    .camp-digital ul.numeros li[data-min] {
+      border-radius: 50%;
+      background: red;
+      height: 2px;
+      margin-left: -1px;
+      margin-top: -1px;
+      position: absolute;
+      width: 2px;
+    }
