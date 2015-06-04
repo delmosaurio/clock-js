@@ -200,6 +200,7 @@
       var x = Math.round(radio*Math.cos(angulo));
 
       elem.css({  'top': y + radio, 'left': x + radio });
+      console.log({  'top': y + radio, 'left': x + radio });
     };
 
     // Extendemos las opciones por default
@@ -273,7 +274,7 @@
 
   $.fn.reloj.defaults = {
     tema: 'camp-digital',
-    anchoAlto: 400,
+    anchoAlto: 200,
     posicion: 'middle center'
   };
 
